@@ -29,7 +29,7 @@
     </font>
    </property>
    <property name="text">
-    <string>upload</string>
+    <string>上传</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_2">
@@ -44,11 +44,11 @@
    <property name="font">
     <font>
      <family>Agency FB</family>
-     <pointsize>18</pointsize>
+     <pointsize>13</pointsize>
     </font>
    </property>
    <property name="text">
-    <string>open file</string>
+    <string>选择文件</string>
    </property>
   </widget>
   <widget class="QTextBrowser" name="textBrowser">

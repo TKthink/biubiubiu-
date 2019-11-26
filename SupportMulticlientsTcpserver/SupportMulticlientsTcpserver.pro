@@ -25,6 +25,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     database.cpp \
+    fliterdialog.cpp \
     flitermanager.cpp \
         main.cpp \
         mainwindow.cpp \
@@ -36,6 +37,7 @@ SOURCES += \
 
 HEADERS += \
     database.h \
+    fliterdialog.h \
     flitermanager.h \
         mainwindow.h \
     mythread.h \
@@ -45,6 +47,7 @@ HEADERS += \
     useradd.h
 
 FORMS += \
+        fliterdialog.ui \
         flitermanager.ui \
         mainwindow.ui \
         useradd.ui

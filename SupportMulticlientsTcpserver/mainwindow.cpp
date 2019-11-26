@@ -214,12 +214,12 @@ void MainWindow::on_treeWidget_currentItemChanged(QTreeWidgetItem *current, QTre
     int flag=0;
     if(!current->parent()){
         QString s = current->text(0);
-        qDebug()<<s;
+        qDebug()<<s;//当前日志名字
         QVector<fliter*> fliterTbl;
         tbl = a.logdataOut(lookingUser->name,s,fliterTbl);
     }
     while (flag!=tbl.size()) {
-        ui->logContent->append(tbl[flag]);
+        ui->logContent->append(tbl[flag]);//展示日志
         flag++;
     }
 }
@@ -231,4 +231,8 @@ void MainWindow::on_back_clicked()
 
 void MainWindow::on_manage_filters_triggered()
 {
+    fliterManager FM;
+    FM.setWindowModality(Qt::ApplicationModal);
+    FM.show();
+    FM.exec();
 }

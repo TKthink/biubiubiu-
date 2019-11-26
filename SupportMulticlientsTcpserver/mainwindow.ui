@@ -27,7 +27,7 @@
     <item row="0" column="0">
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="page">
        <property name="enabled">
@@ -200,7 +200,7 @@
                  </size>
                 </property>
                 <property name="text">
-                 <string>Search</string>
+                 <string>搜索</string>
                 </property>
                </widget>
               </item>
@@ -260,7 +260,7 @@
           <item>
            <widget class="QPushButton" name="back">
             <property name="text">
-             <string>back</string>
+             <string>返回</string>
             </property>
            </widget>
           </item>

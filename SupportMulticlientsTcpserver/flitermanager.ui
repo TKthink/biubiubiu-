@@ -13,16 +13,6 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QTextBrowser" name="textBrowser">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>10</y>
-     <width>271</width>
-     <height>171</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QPushButton" name="Add">
    <property name="geometry">
     <rect>
@@ -33,7 +23,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Add</string>
+    <string>添加</string>
    </property>
   </widget>
   <widget class="QPushButton" name="Properties">
@@ -46,7 +36,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Properties</string>
+    <string>修改</string>
    </property>
   </widget>
   <widget class="QPushButton" name="Remove">
@@ -59,7 +49,17 @@
     </rect>
    </property>
    <property name="text">
-    <string>Remove</string>
+    <string>删除</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>271</width>
+     <height>181</height>
+    </rect>
    </property>
   </widget>
  </widget>

@@ -15,6 +15,7 @@ typedef struct _User{
 
 }User;
 typedef struct _fliter{
+    QString name="";
     QString requirements="";
     bool check=true;
 }fliter;

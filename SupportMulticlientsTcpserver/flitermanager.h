@@ -2,6 +2,15 @@
 #define FLITERMANAGER_H
 
 #include <QDialog>
+#include <QTreeView>
+#include <QMessageBox>
+#include <QStandardItemModel>
+#include <QJsonDocument>
+#include <QJsonArray>
+#include <QJsonObject>
+#include <QFile>
+#include <QDebug>
+#include <fliterdialog.h>
 
 namespace Ui {
 class fliterManager;
@@ -22,6 +31,9 @@ private slots:
 
     void on_Remove_clicked();
 
+    void on_tableView_doubleClicked(const QModelIndex &index);
+
+    void DeleteFliter(QString name);
 private:
     Ui::fliterManager *ui;
 };

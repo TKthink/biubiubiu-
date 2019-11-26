@@ -122,8 +122,6 @@ void database::resetState(QString ID){
 }
 
 void database::userDel(QString ID){
-    QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName(mDefaultDB);
     QSqlQuery sql_query;
     QString reset = QString("delete from user where name='%1'").arg(ID);
     //查询所有记录

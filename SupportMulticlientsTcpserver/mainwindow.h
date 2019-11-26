@@ -18,6 +18,7 @@
 #include <database.h>
 #include "useradd.h"
 #include <QTreeWidgetItem>
+#include <flitermanager.h>
 
 
 namespace Ui {

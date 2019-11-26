@@ -18,22 +18,19 @@ SOURCES += main.cpp\
     mainwin.cpp \
         mainwindow.cpp \
     dlgitem.cpp \
-    registerdialog.cpp \
-    server.cpp
+    registerdialog.cpp
 
 HEADERS  += mainwindow.h \
     client.h \
     dlgitem.h \
     mainwin.h \
-    registerdialog.h \
-    server.h
+    registerdialog.h
 
 FORMS    += mainwindow.ui \
     client.ui \
     dlgitem.ui \
     mainwin.ui \
-    registerdialog.ui \
-    server.ui
+    registerdialog.ui
 
 RC_FILE += myapp.rc
 
