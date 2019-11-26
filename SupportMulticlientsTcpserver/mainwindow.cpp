@@ -216,6 +216,23 @@ void MainWindow::on_treeWidget_currentItemChanged(QTreeWidgetItem *current, QTre
         QString s = current->text(0);
         qDebug()<<s;//当前日志名字
         QVector<fliter*> fliterTbl;
+        QFile file("fliter.json");
+            if(!file.open(QIODevice::ReadOnly)) {
+                qDebug() << "File open failed!";
+            } else {
+                qDebug() <<"File open successfully!";
+            }
+
+            QJsonDocument jdc(QJsonDocument::fromJson(file.readAll()));
+            QJsonObject obj = jdc.object();
+            file.close();
+            for(int i=0;i<obj.keys().size();i++)
+            {
+                fliter *temp = new fliter;
+                temp->requirements = obj[obj.keys()[i]].toObject()["requirements"].toString();//从json文件得到参数
+                temp->check = obj[obj.keys()[i]].toObject()["check"].toBool();
+                fliterTbl.append(temp);
+            }
         tbl = a.logdataOut(lookingUser->name,s,fliterTbl);
     }
     while (flag!=tbl.size()) {
