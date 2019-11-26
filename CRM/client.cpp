@@ -41,7 +41,7 @@ void client::on_pushButton_clicked()
 void client::on_pushButton_2_clicked()
 {
     RegisterDialog reg;
-    reg.setWindowModality(Qt::ApplicationModal);
+    reg.setWindowModality(Qt::ApplicationModal);//注册界面
     reg.show();
     reg.exec();
 }

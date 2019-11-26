@@ -34,8 +34,12 @@ private slots:
     void on_tableView_doubleClicked(const QModelIndex &index);
 
     void DeleteFliter(QString name);
+
+    void init();
+
 private:
     Ui::fliterManager *ui;
+    QStandardItemModel *model_ = new QStandardItemModel(this);
 };
 
 #endif // FLITERMANAGER_H
